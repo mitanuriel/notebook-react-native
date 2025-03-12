@@ -3,12 +3,14 @@ import { StyleSheet, Button, View } from 'react-native';
 
 export default function App() {
 
-
+  function buttonHandler() {
+    alert("alright!")
+  }
 
 
   return (
     <View style={styles.container}>
-      <Button title='Press Me'></Button>
+      <Button title='Press Me' onPress={buttonHandler}></Button>
       <StatusBar style="auto" />
     </View>
   );
